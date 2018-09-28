@@ -15,7 +15,7 @@ source:
 
 build:
   merge_build_host: True  # [win]
-  number: 0
+  number: 1
   skip: true  # [win32]
   rpaths:
     - lib/R/lib/
@@ -23,6 +23,7 @@ build:
 
 requirements:
   build:
+    - {{posix}}zip               # [win]
   host:
     - r-base
     - r-callr >=2.0.0
@@ -31,6 +32,7 @@ requirements:
     - r-rmarkdown
     - r-whisker
     - r-withr
+    - pandoc >=1.12.3
   run:
     - r-base
     - r-callr >=2.0.0
@@ -39,6 +41,7 @@ requirements:
     - r-rmarkdown
     - r-whisker
     - r-withr
+    - pandoc >=1.12.3
 
 test:
   commands:
@@ -64,3 +67,4 @@ extra:
     - daler
     - jdblischak
     - cbrueffer
+    - dbast
