@@ -14,9 +14,8 @@ Summary: Convenience wrapper that uses the 'rmarkdown' package to render small s
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-reprex-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-reprex-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/r-reprex-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-reprex-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-reprex-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-reprex-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/r-reprex-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/r-reprex-feedstock)
 
 Current release info
 ====================
