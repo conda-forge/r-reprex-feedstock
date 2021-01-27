@@ -25,23 +25,27 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
-    - r-callr >=2.0.0
+    - r-callr >=3.3.1
+    - r-cli
     - r-clipr >=0.4.0
     - r-fs
-    - r-rlang
+    - r-glue
+    - r-knitr >=1.23
+    - r-rlang >=0.4.0
     - r-rmarkdown
-    - r-whisker
-    - r-withr
+    - r-withr >=2.3.0
     - pandoc >=1.12.3
   run:
     - r-base
-    - r-callr >=2.0.0
+    - r-callr >=3.3.1
+    - r-cli
     - r-clipr >=0.4.0
     - r-fs
-    - r-rlang
+    - r-glue
+    - r-knitr >=1.23
+    - r-rlang >=0.4.0
     - r-rmarkdown
-    - r-whisker
-    - r-withr
+    - r-withr >=2.3.0
     - pandoc >=1.12.3
 
 test:
@@ -55,10 +59,10 @@ about:
   summary: "Convenience wrapper that uses the 'rmarkdown' package to render small snippets of code to target formats that include both code and output. The goal is to encourage the sharing of small, reproducible, and runnable examples on code-oriented websites, such as <https://stackoverflow.com> and <https://github.com>,\
     \ or in email. The user's clipboard is the default source of input code and the default target for rendered output. 'reprex' also extracts clean, runnable R code from various common formats, such as copy/paste from an R session. "
   license_family: MIT
-
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
+
 extra:
   recipe-maintainers:
     - conda-forge/r
