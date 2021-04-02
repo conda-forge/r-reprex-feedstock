@@ -1,4 +1,4 @@
-{% set version = "1.0.0" %}
+{% set version = "2.0.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/reprex_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/reprex/reprex_{{ version }}.tar.gz
-  sha256: dd961de0619997336a9033cb3ca807068f4001c527f41b4be21211da1ce8df1e
+  sha256: 905377fcc644a485e97caffda3b077f6b3ad8fda09c0bbf378c422e13feb96d1
 
 build:
   merge_build_host: true  # [win]
