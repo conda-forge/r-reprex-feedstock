@@ -23,15 +23,17 @@ build:
 requirements:
   build:
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
     - r-callr >=3.6.0
-    - r-cli >=2.3.1
+    - r-cli >=3.2.0
     - r-clipr >=0.4.0
     - r-fs
     - r-glue
     - r-knitr >=1.23
-    - r-rlang >=0.4.0
+    - r-lifecycle
+    - r-rlang >=1.0.0
     - r-rmarkdown
     - r-rstudioapi
     - r-withr >=2.3.0
@@ -39,12 +41,13 @@ requirements:
   run:
     - r-base
     - r-callr >=3.6.0
-    - r-cli >=2.3.1
+    - r-cli >=3.2.0
     - r-clipr >=0.4.0
     - r-fs
     - r-glue
     - r-knitr >=1.23
-    - r-rlang >=0.4.0
+    - r-lifecycle
+    - r-rlang >=1.0.0
     - r-rmarkdown
     - r-rstudioapi
     - r-withr >=2.3.0
